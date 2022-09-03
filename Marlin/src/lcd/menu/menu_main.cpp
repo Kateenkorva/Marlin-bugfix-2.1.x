@@ -327,9 +327,15 @@ void menu_main() {
     SUBMENU(MSG_MOTION, menu_motion);
   }
 
+<<<<<<< HEAD
     #if BOTH(ADVANCED_PAUSE_FEATURE, DISABLE_ENCODER)
     FILAMENT_CHANGE_ITEM();
     #endif
+=======
+  #if BOTH(ADVANCED_PAUSE_FEATURE, DISABLE_ENCODER)
+    FILAMENT_CHANGE_ITEM();
+  #endif
+>>>>>>> 5f61a896d99688da64b3bfb557f5d76302b555e7
 
   #if HAS_CUTTER
     SUBMENU(MSG_CUTTER(MENU), STICKY_SCREEN(menu_spindle_laser));
@@ -464,7 +470,11 @@ void menu_main() {
   #if ENABLED(ADVANCED_PAUSE_FEATURE) && DISABLED(DISABLE_ENCODER)
     FILAMENT_CHANGE_ITEM();
   #endif
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 5f61a896d99688da64b3bfb557f5d76302b555e7
   END_MENU();
 }
 
